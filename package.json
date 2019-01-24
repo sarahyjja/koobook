@@ -1,0 +1,17 @@
+{
+  "name": "koobook",
+  "version": "1.0.0",
+  "description": "Search book app",
+  "main": "myscript.js",
+  "engines":{
+    "node": "10.x",
+    "npm": "6.x",
+    "yarn": "1.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarahyjja",
+  "license": "ISC"
+}
