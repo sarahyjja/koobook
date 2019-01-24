@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Search book app",
   "main": "myscript.js",
-  "engines":{
+  "engines": {
     "node": "10.x",
     "npm": "6.x",
     "yarn": "1.x"
