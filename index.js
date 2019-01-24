@@ -6,16 +6,16 @@ var app = express();
 app.get('/', function(request, response){
     response.sendfile('index.html');
 });
-//
+
 // const server = http.createServer((req, res) => {
 //   res.statusCode = 200;
 //   res.setHeader('Content-Type', 'text/plain');
 //   res.write(data)
 //   res.end(html);
 // });
-// server.listen(PORT, () => {
-//   console.log(`Server running on ${PORT}/`);
-// });
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}/`);
+});
 
 // -------
 // var spawn = require('child_process').spawn;
