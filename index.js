@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 5000;
 // const app = new express();
 var app = express();
 app.get('/', function(request, response){
-    response.sendfile('index.html');
+    response.sendfile('index.html', 'style.css', 'myscript.js');
 });
 
 // const server = http.createServer((req, res) => {
