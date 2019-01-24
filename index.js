@@ -1,21 +1,31 @@
-const http = require('http');
 const express = require('express');
-const PORT = process.env.PORT || 5000;
-// const app = new express();
-var app = express();
-app.get('/', function(request, response){
-    response.sendfile('index.html', 'style.css', 'myscript.js');
+const path = require('path');
+
+const port = process.env.PORT || 5000;
+const app = express();
+
+// if (process.env.NODE_ENV == 'development') require('dotenv').config({ silent: true });
+
+app.use(express.static(__dirname + '/dist'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './index.html'));
 });
 
-// const server = http.createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.write(data)
-//   res.end(html);
+app.listen(port);
+
+// ----------ok under
+// const http = require('http');
+// const express = require('express');
+// const PORT = process.env.PORT || 5000;
+// // const app = new express();
+// var app = express();
+// app.get('/', function(request, response){
+//     response.sendfile('index.html');
 // });
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}/`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running on ${PORT}/`);
+// });
 
 // -------
 // var spawn = require('child_process').spawn;
