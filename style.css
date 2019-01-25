@@ -17,7 +17,8 @@
       margin-top: 30px;
     }
     .container h2 {
-      font-family: Mukta, sans-serif;
+      /* font-family: Mukta, sans-serif; */
+      font-family: 'Josefin Sans', sans-serif;
       font-size: 1.3em;
       font-weight: 200;
       letter-spacing: 0.6px;
@@ -25,6 +26,7 @@
       color: #888;
       margin-bottom: 15px;
       margin-top: 0px;
+      padding-top: 20px;
     }
       .container #form {
         background-color: inherit;
@@ -88,10 +90,10 @@
     flex-direction: row;
   }
     .flex-container > div {
-      display: flex;
-      flex-basis: calc(100% - 40px);
-      justify-content: center;
-      flex-direction: column;
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
     }
       #image {
         margin-left: 20px;
@@ -101,6 +103,7 @@
       }
     .flex-container > div > div {
       display: flex;
+      justify-content: center;
       flex-direction: row;
     }
       #text {
@@ -115,31 +118,38 @@
   }
 
 h3 {
-  font-family: Mukta, sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  color: #007286;
+  font-family: 'Domine', serif;
+  font-size: 1.5em;
+  /* font-weight: 700; */
+  color: #222;
 }
 
 h4 {
-    font-family: Mukta, sans-serif;
+  font-family: 'Domine', serif;
+  font-size: 1.2em;
+  /* font-weight: 700; */
+  color: #999;
+}
+
+h5 {
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 1em;
-    font-weight: 500;
-    color: #888;
+    /* font-weight: 500; */
+    color: #bbb;
 }
 
 p {
-  font-family: Mukta, sans-serif;
-  font-size: 1em;
-  font-weight: 300;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 0.9em;
+  /* font-weight: 300; */
   text-align: justify;
   color: #777;
   display: none;
 }
 
 a {
-  font-family: Mukta, sans-serif;
-  font-size: 1em;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 0.9em;
   font-weight: 200;
   text-align: left;
   color: #007286;
@@ -158,6 +168,20 @@ a {
     .container h2 {
       margin-bottom: -15px;
       margin-top: 15px;
+    }
+    .container #form {
+    }
+
+    .container #search {
+    }
+
+    .container #submit {
+    }
+
+    .container #submit:hover {
+    }
+
+    .container #submit:active {
     }
 
   .flex-container > div > div {
