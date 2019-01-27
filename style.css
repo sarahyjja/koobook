@@ -10,7 +10,7 @@
 
 .container img{
   margin-top: 30px;
-  width: 70%;
+  width: 60%;
 }
 .container h1 {
   text-align: center;
@@ -138,26 +138,29 @@
 }
 
 h3 {
-  font-family: 'Domine', serif;
-  font-size: 1.1em;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1em;
   color: #222;
+  padding-bottom: 2px;
 }
 
 h4 {
-  font-family: 'Domine', serif;
-  font-size: 0.9em;
+  font-family: 'Capriola', sans-serif;
+  font-size: 0.8em;
   color: #999;
+  padding-bottom: 2px;
 }
 
 h5 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 0.8em;
+  font-family: 'Capriola', sans-serif;
+  font-size: 0.5em;
   color: #aaa;
+  padding-bottom: 2px;
 }
 
 a {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 0.9em;
+  font-family: 'Capriola', sans-serif;
+  font-size: 0.6em;
   font-weight: 200;
   text-align: left;
   color: #007286;
@@ -173,7 +176,7 @@ a:visited {
 
   .container img{
     margin-top: 20px;
-    width: 68%;
+    width: 50%;
   }
   .container h1 {
     margin-top: 50px;
@@ -257,7 +260,7 @@ a:visited {
   }
 
   h5 {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   p {
     font-family: 'Vesper Libre', serif;
@@ -278,14 +281,14 @@ a:visited {
   @media only screen and (min-width: 1000px){
 
     .container img{
-      width: 40%;
+      width: 20%;
     }
     .container h1 {
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .container h2 {
       font-size: 1.3em;
-      padding-top: 30px;
+      padding-top: 40px;
     }
     .container #form {
       margin-bottom: 90px;
@@ -303,8 +306,8 @@ a:visited {
     }
 
     #box-image {
-      width: 9%;
-      margin-left: 27%;
+      width: 7%;
+      margin-left: 30%;
     }
 
     .flex-text {
@@ -325,11 +328,27 @@ a:visited {
     }
     #box-text5{
       width:50%;
+      margin-bottom: 80px;
     }
+    h3 {
+      font-size: 1.4em;
+      padding-bottom: 3px;
+    }
+
+    h4 {
+      font-size: 1.2em;
+      padding-bottom: 3px;
+    }
+
+    h5 {
+      font-size: 0.8em;
+      padding-bottom: 3px;
+    }
+
     p {
       font-size: 1em;
     }
     a {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
   }
