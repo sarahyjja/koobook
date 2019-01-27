@@ -7,12 +7,13 @@ async function bookSearch(){
     dataType: "json",
     success: function(data){
       for(i = 0; i < data.items.length; i++){
-        results.innerHTML += `<img id=image src=${data.items[i].volumeInfo.imageLinks.smallThumbnail}/>`
-        results.innerHTML += `<h3 id=text>${data.items[i].volumeInfo.title}</h3>`
-        results.innerHTML += `<h4 id=text>${data.items[i].volumeInfo.authors}</h4>`
-        results.innerHTML += `<h5 id=text>Published by ${data.items[i].volumeInfo.publisher}</h5>`
-        results.innerHTML += `<p id=text>${data.items[i].volumeInfo.description}</p>`
-        results.innerHTML += `<a href=${data.items[i].volumeInfo.infoLink} id=text>Read more...<br></a>`
+        results.innerHTML += `<img class="flex" id="box-image" src=${data.items[i].volumeInfo.imageLinks.smallThumbnail}/>`
+        results.innerHTML += `<h3 class="flex-text" id="box-text1">${data.items[i].volumeInfo.title}</h3>`
+        results.innerHTML += `<h4 class="flex-text" id="box-text2">${data.items[i].volumeInfo.authors}</h4>`
+        results.innerHTML += `<h5 class="flex-text" id="box-text3">Published by { ${data.items[i].volumeInfo.publisher} }</h5>`
+        results.innerHTML += `<p class="flex-text" id="box-text4"><i>${data.items[i].volumeInfo.description}</i></p>`
+        results.innerHTML += `<a href=${data.items[i].volumeInfo.infoLink} class="flex-text" id="box-text5">Read more...</a>`
+
       }
     },
     type: 'GET'
