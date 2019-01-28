@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -8,20 +8,23 @@
   align-items: center;
 }
 
-.container img{
+.container img {
   margin-top: 30px;
   width: 60%;
 }
+
 .container h1 {
   text-align: center;
 }
+
 .container h2 {
-font-family: 'Major Mono Display', monospace;
-font-size: 0.7em;
-text-align: center;
-color: #000;
-padding-top: 30px;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 0.7em;
+  text-align: center;
+  color: #000;
+  padding-top: 20px;
 }
+
 .container #form {
   background-color: inherit;
   margin: auto;
@@ -34,7 +37,7 @@ padding-top: 30px;
   width: 250px;
   height: 37px;
   border-radius: 20px;
-  border: solid 0.8px #aaa;
+  border: solid 0.8px #888;
   background-color: inherit;
   display: block;
   margin: auto;
@@ -42,9 +45,9 @@ padding-top: 30px;
   font-family: 'Capriola', sans-serif;
   font-size: 15px;
   text-align: center;
-  /* box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.1); */
 }
-::placeholder{
+
+::placeholder {
   font-style: italic;
   font-size: 10px;
   color: #aaa;
@@ -52,20 +55,18 @@ padding-top: 30px;
 }
 
 .container #submit {
-  width: 60px;
-  height: 40px;
+  width: 55px;
+  height: 35px;
   border-radius: 50px;
   border-color: inherit;
-  background-color: #fff;
-  padding-top: 3px;
+  background-color: #000;
   margin-top: 15px;
   margin-bottom: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 19px;
-  font-weight: bold;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 18px;
   letter-spacing: 0.3px;
   text-align: center;
-  color: #444;
+  color: #fff;
 }
 
 .container #submit:hover {
@@ -75,7 +76,6 @@ padding-top: 30px;
 
 .container #submit:active {
   background-color: #007286;
-  border-color: #007286;
   color: #FFF;
   cursor: pointer;
 }
@@ -83,12 +83,13 @@ padding-top: 30px;
 .flex {
   width: auto;
 }
+
 #box-image {
   width: 40%;
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 15px;
-  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.5);
 }
 
 .flex-text {
@@ -97,21 +98,8 @@ padding-top: 30px;
   flex-direction: column;
   text-align: center;
 }
-#box-text1{
-  display: flex;
-  width:auto;
-  height:auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-#box-text2{
-  display: flex;
-  width:auto;
-  height:auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-#box-text3{
+
+#box-text1 {
   display: flex;
   width:auto;
   height:auto;
@@ -119,7 +107,23 @@ padding-top: 30px;
   padding-right: 20px;
 }
 
-#box-text4{
+#box-text2 {
+  display: flex;
+  width:auto;
+  height:auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#box-text3 {
+  display: flex;
+  width:auto;
+  height:auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#box-text4 {
   display: flex;
   flex-wrap: wrap;
   width:auto;
@@ -128,7 +132,8 @@ padding-top: 30px;
   padding-right: 20px;
   display: none;
 }
-#box-text5{
+
+#box-text5 {
   display: flex;
   flex-wrap: wrap;
   width:auto;
@@ -140,7 +145,7 @@ padding-top: 30px;
 
 h3 {
   font-family: 'Major Mono Display', monospace;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #222;
   padding-bottom: 3px;
   text-transform: lowercase;
@@ -148,14 +153,14 @@ h3 {
 
 h4 {
   font-family: 'Capriola', sans-serif;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #999;
   padding-bottom: 2px;
 }
 
 h5 {
   font-family: 'Capriola', sans-serif;
-  font-size: 0.5em;
+  font-size: 0.6em;
   color: #aaa;
   padding-bottom: 2px;
 }
@@ -174,15 +179,17 @@ a:visited {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
 
-  .container img{
+  .container img {
     margin-top: 20px;
     width: 50%;
   }
+
   .container h1 {
     margin-top: 50px;
   }
+
   .container h2 {
     font-size: 1.2em;
     padding-top: 40px;
@@ -198,49 +205,53 @@ a:visited {
     border-radius: 35px;
     font-size: 19px;
   }
-  ::placeholder{
+
+  ::placeholder {
     font-size: 17px;
   }
+
   .container #submit {
     width: 70px;
     height: 50px;
     border-radius: 70px;
   }
+
   .flex {
     position: absolute;
   }
+
   #box-image {
     position: absolute;
     width: 20%;
     margin-left: 8%;
-    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.5);
   }
 
   .flex-text {
     margin-left: 30%;
   }
 
-  #box-text1{
+  #box-text1 {
     align-self: flex-start;
     text-align: left;
     width:60%;
   }
 
-  #box-text2{
+  #box-text2 {
     align-items: flex-start;
     text-align: left;
     width:60%;
     padding-top: 5px;
   }
 
-  #box-text3{
+  #box-text3 {
     align-self: flex-start;
     text-align: left;
     width:60%;
     padding-top: 5px;
   }
 
-  #box-text4{
+  #box-text4 {
     align-self: flex-start;
     text-align: left;
     width:56%;
@@ -248,7 +259,8 @@ a:visited {
     padding-top: 5px;
     display: block;
   }
-  #box-text5{
+
+  #box-text5 {
     align-self: flex-start;
     text-align: left;
     width:60%;
@@ -267,6 +279,7 @@ a:visited {
   h5 {
     font-size: 0.9em;
   }
+
   p {
     font-family: 'Vesper Libre', serif;
     font-size: 1.1em;
@@ -283,21 +296,23 @@ a:visited {
     cursor: pointer;
   }
 
-  /* ------------------------------------------------- */
-  @media only screen and (min-width: 1000px){
+  @media only screen and (min-width: 1000px) {
 
-    .container img{
-      width: 20%;
+    .container img {
+      width: 22%;
     }
+
     .container h1 {
-      margin-top: 40px;
+      margin-top: 70px;
     }
+
     .container h2 {
-      font-size: 1.2em;
-      padding-top: 70px;
+      font-size: 1.1em;
+      padding-top: 55px;
     }
+
     .container #form {
-      margin-top: 30px;
+      margin-top: 20px;
       margin-bottom: 90px;
     }
 
@@ -309,7 +324,8 @@ a:visited {
       font-size: 16px;
       letter-spacing: 0.8px;
     }
-    ::placeholder{
+
+    ::placeholder {
       font-size: 15px;
       color: #bbb;
       opacity: 0.9;
@@ -328,23 +344,28 @@ a:visited {
     .flex-text {
       margin-left: 38%;
     }
-    #box-text1{
-      width:50%;
-    }
-    #box-text2{
-      width:50%;
-    }
-    #box-text3{
+
+    #box-text1 {
       width:50%;
     }
 
-    #box-text4{
+    #box-text2 {
+      width:50%;
+    }
+
+    #box-text3 {
+      width:50%;
+    }
+
+    #box-text4 {
       width:45%;
     }
-    #box-text5{
+
+    #box-text5 {
       width:50%;
       margin-bottom: 80px;
     }
+
     h3 {
       font-size: 1.4em;
       padding-bottom: 3px;
@@ -363,6 +384,7 @@ a:visited {
     p {
       font-size: 1em;
     }
+
     a {
       font-size: 0.8em;
     }
