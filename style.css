@@ -16,38 +16,39 @@
   text-align: center;
 }
 .container h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 200;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: #888;
-  padding-top: 5px;
+font-family: 'Major Mono Display', monospace;
+font-size: 0.7em;
+text-align: center;
+color: #000;
+padding-top: 30px;
 }
 .container #form {
   background-color: inherit;
   margin: auto;
   width: 100%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .container #search {
   width: 250px;
   height: 37px;
-  border-radius: 10px;
-  border: solid 0.8px #ccc;
+  border-radius: 20px;
+  border: solid 0.8px #aaa;
   background-color: inherit;
   display: block;
   margin: auto;
-  margin-top: 10px;
-  font-family: Mukta, sans-serif;
-  font-weight: 700;
+  margin-top: 15px;
+  font-family: 'Capriola', sans-serif;
   font-size: 15px;
-  letter-spacing: 0.2px;
   text-align: center;
-  color: #3B3C40;
-  box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.1); */
+}
+::placeholder{
+  font-style: italic;
+  font-size: 10px;
+  color: #aaa;
+  opacity: 0.9;
 }
 
 .container #submit {
@@ -56,15 +57,15 @@
   border-radius: 50px;
   border-color: inherit;
   background-color: #fff;
+  padding-top: 3px;
   margin-top: 15px;
-  margin-bottom: 30px;
-  font-family: Mukta, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px;
+  font-weight: bold;
   letter-spacing: 0.3px;
   text-align: center;
-  color: #888;
-  margin-right: -3px;
+  color: #444;
 }
 
 .container #submit:hover {
@@ -73,7 +74,7 @@
 }
 
 .container #submit:active {
-  background-color: #3B3C40;
+  background-color: #007286;
   border-color: #007286;
   color: #FFF;
   cursor: pointer;
@@ -139,9 +140,10 @@
 
 h3 {
   font-family: 'Major Mono Display', monospace;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #222;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
+  text-transform: lowercase;
 }
 
 h4 {
@@ -182,8 +184,8 @@ a:visited {
     margin-top: 50px;
   }
   .container h2 {
-    font-size: 1.4em;
-    padding-top: 15px;
+    font-size: 1.2em;
+    padding-top: 40px;
   }
 
   .container #form {
@@ -191,11 +193,14 @@ a:visited {
   }
 
   .container #search {
-    width: 450px;
-    height: 45px;
-    border-radius: 6px;
+    width: 550px;
+    height: 60px;
+    border-radius: 35px;
+    font-size: 19px;
   }
-
+  ::placeholder{
+    font-size: 17px;
+  }
   .container #submit {
     width: 70px;
     height: 50px;
@@ -218,20 +223,20 @@ a:visited {
   #box-text1{
     align-self: flex-start;
     text-align: left;
-    width:65%;
+    width:60%;
   }
 
   #box-text2{
     align-items: flex-start;
     text-align: left;
-    width:65%;
+    width:60%;
     padding-top: 5px;
   }
 
   #box-text3{
     align-self: flex-start;
     text-align: left;
-    width:65%;
+    width:60%;
     padding-top: 5px;
   }
 
@@ -246,7 +251,7 @@ a:visited {
   #box-text5{
     align-self: flex-start;
     text-align: left;
-    width:65%;
+    width:60%;
     padding-top: 5px;
     margin-bottom: 100px;
   }
@@ -256,7 +261,7 @@ a:visited {
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   h5 {
@@ -265,6 +270,7 @@ a:visited {
   p {
     font-family: 'Vesper Libre', serif;
     font-size: 1.1em;
+    font-style: italic;
     color: #777;
   }
 
@@ -287,22 +293,31 @@ a:visited {
       margin-top: 40px;
     }
     .container h2 {
-      font-size: 1.3em;
-      padding-top: 40px;
+      font-size: 1.2em;
+      padding-top: 70px;
     }
     .container #form {
+      margin-top: 30px;
       margin-bottom: 90px;
     }
 
     .container #search {
       width: 550px;
       height: 50px;
-      border-radius: 10px;
+      border-radius: 30px;
       margin-top: 10px;
+      font-size: 16px;
+      letter-spacing: 0.8px;
+    }
+    ::placeholder{
+      font-size: 15px;
+      color: #bbb;
+      opacity: 0.9;
     }
 
     .container #submit {
       margin-top: 20px;
+      font-size: 18px;
     }
 
     #box-image {

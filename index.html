@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Mukta:200,700" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Vesper+Libre|Major+Mono+Display|Capriola" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
@@ -13,15 +12,18 @@
     <div class="container">
       <h1><img src="koobook_eyes.gif"/></h1>
       <!-- <h1>koobook</h1> -->
-      <h2>Enter the name of a book/author</h2>
-      <form id="form">
-        <input type="text" autocomplete="off" id="search"/>
-        <button id="submit" type="button">GO</button>
+      <h2>• WELCOME TO THE KOOBOOK SEARCH •</h2>
+      <form id="form" method="GET" action="">
+        <input id="search" autocomplete="off" placeholder="Search book by name/author/theme" type="text" minlength="1" pattern="[^a-z0-9_].*$" required/>
+
+        <!-- <input id="search" autocomplete="off" placeholder="Search book by name/author/theme" type="text" required pattern="[A-Za-z0-9' -]+"/> [^A-Za-z0-9_].*$-->
+        <!-- <span class="error">oups error</span> -->
+        <button id="submit" type="submit">GO</button>
       </form>
     </div>
 
       <div class=flex id="results"></div>
-
+      <!-- SCROLL TO THE TOP <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
   <!-- </main> -->
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
