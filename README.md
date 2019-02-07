@@ -36,7 +36,7 @@ To run the app locally, please, follow the instructions:
 ### The files
 To make any changes, you will need to navigate in between 3 files:
 - `index.html`
-- `index.js`
+- `myscript.js`
 - `style.css`
 
 
