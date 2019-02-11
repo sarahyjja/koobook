@@ -17,6 +17,7 @@ async function bookSearch() {
   $.ajax({
     url: "https://www.googleapis.com/books/v1/volumes?q=" + search,
     dataType: "json",
+    type: 'GET',
     success: function(data) {
       for(i = 0; i < data.items.length; i++) {
         results.innerHTML += `<img class="flex" id="box-image" src=${data.items[i].volumeInfo.imageLinks.smallThumbnail}/>`
@@ -25,10 +26,12 @@ async function bookSearch() {
         results.innerHTML += `<h5 class="flex-text" id="box-text3">Published by { ${data.items[i].volumeInfo.publisher} }</h5>`
         results.innerHTML += `<p class="flex-text" id="box-text4">${data.items[i].volumeInfo.description}</p>`
         results.innerHTML += `<a href=${data.items[i].volumeInfo.infoLink} class="flex-text" id="box-text5">Read more...</a>`
-
       }
     },
-    type: 'GET'
+    error: function(xhr, status, error){
+         const errorMessage = xhr.status
+            alert('Please, fill the search box with some text!');
+     },
   });
 }
 document.getElementById('submit').addEventListener('click', bookSearch, false);

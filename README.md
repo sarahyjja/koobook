@@ -39,7 +39,6 @@ To make any changes, you will need to navigate in between 3 files:
 - `myscript.js`
 - `style.css`
 
-
 Save your changes and see them when you run `index.html` in your browser.
 
 

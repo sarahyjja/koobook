@@ -70,7 +70,8 @@
 }
 
 .container #submit:hover {
-  color: #007286;
+  background-color: #007286;
+  color: #FFF;
   cursor: pointer;
 }
 
